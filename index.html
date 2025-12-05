@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=10">
+    <title>portafolio julio david ramirez</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="header"> <!---es recomendable que las clases se dejen estipuladas para que sea mas facial trabjar en css--->>
+
+        <div class="container header__content">
+            <h1 class="logo"> JULIO DAVID RAMIREZ </h1> 
+            <nav class="nav">
+                <ul class="nav">
+                    <li><a class="nav__link" href="#">Cantalogo</a></li>
+                    <li><a class="nav__link" href="mascotas.html">Mascotas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="about">
+            <h2>ABOUT ME</h2>
+            <p>Nací el 14 de noviembre del año 2000 en Sahagún, Córdoba.
+        Soy ingeniero mecánico y me gusta el gym.</p>
+        </section>
+
+        <section class="contact">
+            <h2>CONTACT</h2>
+             <form class="form" action="#" method="post"> <!---el metodo se usa para enviar informacion privada, de manera oculta-->
+                <label for="nombre">Name:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Type your name"
+                required>
+
+                <br><br>
+                <button type="submit" class="btn">Send</button>
+                </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>© 2025 - Julio David Ramírez</p>
+    </footer>
+</body>
+</html>
