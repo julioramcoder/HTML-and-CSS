@@ -3,7 +3,49 @@
     margin: 0; 
     padding: 0;
     box-sizing: border-box; 
+    
 }
+
+.proyectos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /*nos permite separar los elementos hijos del grid o el flex*/ 
+    padding: 20px  /*darle margen al texto dentro del recuadro*/
+}
+
+.proyecto{
+   background: white; 
+   padding: 50px; /*darle margen al texto dentro del recuadro*/
+   border-radius: 10px; 
+   text-align: center; 
+   box-shadow: 0 2px 8px rgba(0,0,0,0.9); /*pone sombreado a las cajas*/
+}
+
+.proyecto img { /* esto es por si decido poner alguna foto*/
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.solid{ /*en este caso generamos el solid para poder darle bordes y color a la parte del titulo de lo que hice con el grid*/
+background: #1f3d2bca;
+color: #f5f2f2;
+border-radius: 10%; 
+
+}
+.proyecto .texto{
+    white-space: pre-line; /* ME PERMITE REPETAR LOS ESPACIOS DEL TEXTO ORIGINAL */
+   text-align: justify; 
+    line-height: 1.4;/*espaciado entre lineas*/
+   font-size: 14px;  /**tamaño de la letra/
+   margin-bottom: 100px; /*este es el espacio que de deja por debajo de los elemntos*/
+   padding: 10px 15px; /*mejora el texto ajustandolo para qeue quede dentro del espacio para el texto*/
+   background: #E8F3EC;;
+   border-radius: 5%;
+   color: #1F3D2B;
+}
+
 
 body{
     font-family: Arial, Helvetica, sans-serif; /*define la letra general*/
@@ -13,17 +55,18 @@ body{
     background-attachment: fixed;  /* efecto “pegado” al hacer scroll (opcional) */
     
     line-height: 1.6; /*separa las lineas para que se vean mejor*/
-    text-align: center; 
-
-
+    text-align: center;   
 }
 
 .container { 
+
     width: 80%; /*usa el 90% de la pantalla */
     max-width: 1000px; /*evita que en pantallas grandes se estire demasiado*/
     margin: 0 auto; /*centra el bloque horizontamente*/
     padding: 20xp 0; /*da espacion arriba y abajo de lo que este entre div*/
     color: #fcf8f8; /* color del texto*/
+    text-align: justify;
+    white-space: pre-line;
     
 }
 
@@ -156,6 +199,6 @@ margin-right: 5%;
 .mascotas img {
     width: 100%; /*espacio que cocupa la imagen dentro de la tarjeta*/
     height: 300px; /*añade altura de la foto*/
-    object-fit: cover; 
+    object-fit: cover; /*para que la imagen que agregamos sea una "PORTADA", MANTIENE PROPORCIONES A LA IMAGEN*/
 }
 

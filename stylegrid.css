@@ -1,0 +1,29 @@
+nav,header,footer,aside,main {
+    padding: 20px;
+    border: solid;
+}
+
+/*contenedor principal*/
+.grid-container{
+    display: grid; /*activa CSS grid */
+    grid-template-columns: repeat(3, 1fr); /**/
+    grid-template-rows: auto 1fr auto;
+    grid-auto-flow: dense;
+    margin: 10px; /*margen de la caja mas grande*/
+    gap: 10px; /*espacio entre los items entre cagitas*/
+    padding: 10px;
+    min-height: 100vh;
+    width: 100%;
+    grid-template-areas:
+    "header header header"
+    "nav main aside"
+    "footer footer footer";
+}  
+
+.grid-item {
+    background-color: aqua;
+    color: rgb(17, 42, 187);
+    padding: 20px;
+    text-align: center;
+}
+
